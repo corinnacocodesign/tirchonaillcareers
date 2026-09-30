@@ -1,15 +1,28 @@
-# Tir Chonaill Careers starter website
+# Tir Chonaill Careers — refined client version
 
-A static HTML/CSS/JavaScript recruitment website ready for GitHub.
+This version incorporates the client feedback while deliberately simplifying the homepage so it feels more established, editorial and human-designed.
 
-## Preview locally
-Because jobs are loaded from `data/jobs.json`, use a simple local web server rather than double-clicking the HTML file. In VS Code, the Live Server extension is an easy option.
+## Feedback retained
+- “People. Potential. Progress.” hero message
+- “Irish Roots. Global Opportunities.” brand message
+- Ireland and Europe positioning
+- Engineering & Technical, Construction & Trades, Professional Services and Technology specialist areas
+- Premium deep green, charcoal and gold palette
+- Elegant serif headings with modern sans-serif body copy
+- TC branding retained
+- Broader recruitment positioning rather than a data-centre-only feel
+- Donegal/Irish landscape imagery retained for the About story
+- Candidate and employer pathways
+- Job listings and CV upload journey retained
 
-## Edit vacancies
-Open `data/jobs.json`, copy an existing job object and change its fields.
+## Refinements in this version
+- Removed homepage icon overload and image-card grid
+- Removed unsupported statistics, client logos and testimonial claims
+- Reduced decorative panels and visual clutter
+- One strong professional hero image
+- Specialist sectors presented as a clean editorial list
+- Simpler featured jobs presentation
+- One restrained people/relationships section for candidates and employers
+- More whitespace and more selective use of gold
 
-## CV form
-`apply.html` contains the front-end form only. It deliberately does **not** email CVs yet. Connect it to a secure backend/form provider before launch; never put email passwords or private API keys in this repository.
-
-## GitHub Pages
-This front end can be hosted on GitHub Pages. A separate secure service is still needed for CV uploads/email delivery.
+The CV form is a front-end demonstration until it is connected to a secure form/email service.
