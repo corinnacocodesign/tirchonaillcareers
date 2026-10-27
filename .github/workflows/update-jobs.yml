@@ -1,0 +1,34 @@
+
+name: Update job listings
+
+on:
+  push:
+    branches:
+      - root
+    paths:
+      - 'data/jobs/**'
+      - 'scripts/build_jobs.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get website files
+        uses: actions/checkout@v4
+
+      - name: Rebuild job listings
+        run: python3 scripts/build_jobs.py
+
+      - name: Save updated listings
+        run: |
+          if ! git diff --quiet -- data/jobs-index.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/jobs-index.json
+            git commit -m "Update published job listings"
+            git push
+          fi
