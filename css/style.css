@@ -10,3 +10,18 @@
 @media(max-width:560px){.hero-refined{min-height:540px;padding:70px 0;background-image:linear-gradient(90deg,rgba(4,23,19,.96),rgba(4,23,19,.68)),url('../images/employer.jpg')}.sector-list{grid-template-columns:1fr}.sector-list article{border-right:0;margin-right:0;padding:26px 0}.approach-actions{grid-template-columns:1fr}.approach-image{min-height:340px}}
 
 .job-detail-content{max-width:850px;margin-top:2rem;color:#25332f}.job-detail-content h2{font-size:1.5rem;margin:1.5rem 0 .6rem}.job-detail-section ul{padding-left:1.5rem;line-height:1.8}.job-detail-section li{margin-bottom:.35rem}.job-detail-content p{line-height:1.75}
+
+/* Job details: accessible light reading surface */
+.job-title-hero{padding:64px 0 54px;background:linear-gradient(110deg,#061b16,#143a31);color:#fff}
+.job-title-hero .eyebrow{color:#f0ca77}
+.job-title-hero h1{color:#fff;font-size:clamp(38px,5vw,64px);margin:14px 0 20px}
+.job-title-hero p{color:#f1f5f2;font-size:18px;margin:0}
+.job-description-section{background:#fff;padding:52px 0 88px;color:#202d28}
+.job-detail-panel{max-width:930px}
+.job-description-section .job-detail-content{max-width:850px;margin:0;color:#26332e}
+.job-description-section .job-detail-content p,.job-description-section li{color:#26332e;font-size:16px;line-height:1.8}
+.job-description-section .job-detail-content h2{color:#123c2e;font-size:clamp(20px,2.3vw,27px);margin:32px 0 12px}
+.job-description-section .job-detail-section{margin:24px 0}
+.job-description-section .job-detail-section ul{padding-left:25px;margin:10px 0 22px}
+.job-description-section .job-detail-section li{margin-bottom:9px}
+.job-description-section .btn-green{margin-top:20px}

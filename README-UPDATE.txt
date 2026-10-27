@@ -1,0 +1,1 @@
+Contrast fix: job headings are on a dark hero, while all job-description text is on white with dark text. Planner location changed to On the road. Upload these files to the root of the existing GitHub repository, replacing matching files. CV email delivery is not yet active.
