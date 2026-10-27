@@ -1,28 +1,23 @@
-# Tir Chonaill Careers — refined client version
+# Tir Chonaill Careers — client content update
 
-This version incorporates the client feedback while deliberately simplifying the homepage so it feels more established, editorial and human-designed.
+This package is based on the approved refined design and replaces placeholder jobs with the two descriptions supplied by the client.
 
-## Feedback retained
-- “People. Potential. Progress.” hero message
-- “Irish Roots. Global Opportunities.” brand message
-- Ireland and Europe positioning
-- Engineering & Technical, Construction & Trades, Professional Services and Technology specialist areas
-- Premium deep green, charcoal and gold palette
-- Elegant serif headings with modern sans-serif body copy
-- TC branding retained
-- Broader recruitment positioning rather than a data-centre-only feel
-- Donegal/Irish landscape imagery retained for the About story
-- Candidate and employer pathways
-- Job listings and CV upload journey retained
+## Client details
+- Requested domain: tir-chonaill-careers.com (domain ownership/DNS not verified)
+- Intended CV inbox: info@tir-chonaill-careers.com
+- Contacts: shaun@tir-chonaill-careers.com and donal@tir-chonaill-careers.com
 
-## Refinements in this version
-- Removed homepage icon overload and image-card grid
-- Removed unsupported statistics, client logos and testimonial claims
-- Reduced decorative panels and visual clutter
-- One strong professional hero image
-- Specialist sectors presented as a clean editorial list
-- Simpler featured jobs presentation
-- One restrained people/relationships section for candidates and employers
-- More whitespace and more selective use of gold
+## Confirm before launch
+- Planner location (not specified; displayed as To be confirmed).
+- Job types, salaries, closing dates, and job references (not provided).
+- Whether benefits and on-the-road location apply as supplied to each role.
+- Candidate privacy notice, retention rules and data handling.
+- Secure CV backend/email delivery (NOT connected; GitHub Pages alone cannot handle uploads).
+- Contact form backend (NOT connected).
+- Client admin/CMS (NOT implemented).
+- Domain registration and DNS, taking care not to overwrite existing email MX/SPF/DKIM/DMARC records.
 
-The CV form is a front-end demonstration until it is connected to a secure form/email service.
+The CV form is a demo only. Do not collect live applications until the secure upload backend is tested. No claims about emails being delivered should be made.
+
+## Publish
+Unzip and upload the **contents** of the tir-chonaill-careers folder to the root of your GitHub Pages repository, replacing existing files. Verify Jobs, Project Manager, Planner and application buttons.
