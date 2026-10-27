@@ -2,12 +2,15 @@
   {
     "id": "planner",
     "title": "Planner",
+    "published": true,
     "location": "On the road",
     "type": "Not specified",
     "sector": "Engineering & Technical",
     "salary": "Not specified",
     "summary": "Support planning, scheduling and progress monitoring on electrical and engineering projects.",
-    "description": "We are seeking a detail-oriented and analytical Planner to develop and manage project schedules, monitor progress and help teams deliver works on time and within budget.",
+    "intro": "Tir Chonaill Careers is an Irish recruitment agency specialising in electrical contracting and engineering. We connect contractors with technical talent for commercial, industrial and infrastructure projects.",
+    "description": "We are seeking a detail-oriented and analytical Planner to develop and manage project schedules, monitor progress and help teams deliver works on time and within budget. TEST",
+    "workLocation": "On the road",
     "sections": [
       {
         "heading": "Main duties and responsibilities",
@@ -56,10 +59,7 @@
           "Food allowance."
         ]
       }
-    ],
-    "workLocation": "On the road",
-    "intro": "Tir Chonaill Careers is an Irish recruitment agency specialising in electrical contracting and engineering. We connect contractors with technical talent for commercial, industrial and infrastructure projects.",
-    "published": true
+    ]
   },
   {
     "id": "project-manager-belgium",
