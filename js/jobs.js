@@ -1,4 +1,10 @@
-async function getJobs(){const r=await fetch('data/jobs.json');if(!r.ok)throw Error('Jobs unavailable');return r.json()}
+async function getJobs(){
+  // Generated automatically from the CMS job files by GitHub Actions.
+  const r=await fetch('data/jobs-index.json',{cache:'no-cache'});
+  if(!r.ok)throw Error('Jobs unavailable');
+  const jobs=await r.json();
+  return jobs.filter(j=>j.published!==false);
+}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function card(j){return `<article class="job-card"><div class="job-body"><span class="eyebrow dark">${esc(j.sector)}</span><h3>${esc(j.title)}</h3><div class="meta"><span>${esc(j.location)}</span>${j.type==='Not specified'?'':`<span>${esc(j.type)}</span>`}${j.salary==='Not specified'?'':`<span>${esc(j.salary)}</span>`}</div><p>${esc(j.summary)}</p><a class="job-link" href="job.html?id=${encodeURIComponent(j.id)}">View job →</a></div></article>`}
 async function featured(){const el=document.querySelector('#featuredJobs');if(!el)return;try{const jobs=await getJobs();el.innerHTML=jobs.slice(0,3).map(card).join('')}catch{el.textContent='Vacancies are temporarily unavailable.'}}

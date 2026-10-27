@@ -1,0 +1,157 @@
+[
+  {
+    "id": "planner",
+    "title": "Planner",
+    "location": "On the road",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Support planning, scheduling and progress monitoring on electrical and engineering projects.",
+    "description": "We are seeking a detail-oriented and analytical Planner to develop and manage project schedules, monitor progress and help teams deliver works on time and within budget.",
+    "sections": [
+      {
+        "heading": "Main duties and responsibilities",
+        "items": [
+          "Assist in preparation of schedule data for contracts.",
+          "Work with Contracts Managers to determine schedule rates for activities and milestones.",
+          "Establish work sequences and activity durations for assigned projects.",
+          "Develop and maintain project programmes and schedules.",
+          "Attend programme and progress meetings with clients.",
+          "Review and analyse supplier schedules.",
+          "Monitor project progress and update schedules.",
+          "Apply Earned Value, resourcing and progress measurement techniques.",
+          "Support preparation of project changes and budget allocations.",
+          "Provide ongoing scheduling insights to project teams.",
+          "Identify potential delays and propose mitigation strategies.",
+          "Ensure alignment between planning, project teams and stakeholders."
+        ]
+      },
+      {
+        "heading": "Qualifications and experience",
+        "items": [
+          "HNC/HND/BSc in Engineering or equivalent experience.",
+          "3+ years’ project planning experience within electrical/engineering contracts.",
+          "Ability to establish work sequences and activity durations.",
+          "Provide continuous schedule support to project teams.",
+          "Excellent written and verbal communication.",
+          "Strong time management and organisational skills.",
+          "Working knowledge of Primavera P6 preferred; training can be provided.",
+          "Able to work independently and in a team."
+        ]
+      },
+      {
+        "heading": "Desirable skills",
+        "items": [
+          "Planning and scheduling expertise.",
+          "Analytical skills and project performance monitoring.",
+          "Organisation and ability to manage multiple schedules.",
+          "Communication and problem-solving.",
+          "Attention to detail, teamwork and Microsoft Office proficiency."
+        ]
+      },
+      {
+        "heading": "Benefits",
+        "items": [
+          "Additional leave.",
+          "Food allowance."
+        ]
+      }
+    ],
+    "workLocation": "On the road",
+    "intro": "Tir Chonaill Careers is an Irish recruitment agency specialising in electrical contracting and engineering. We connect contractors with technical talent for commercial, industrial and infrastructure projects.",
+    "published": true
+  },
+  {
+    "id": "project-manager-belgium",
+    "title": "Project Manager",
+    "location": "Belgium",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Lead electrical (LV, MV & HV) and mechanical piping/HVAC construction projects in Belgium.",
+    "description": "Responsible for planning, organising, leading, coordinating and controlling construction projects across the business unit, from conceptual development through scheduling, delivery and handover. Act as key client contact and ensure strong environmental, health, safety and quality performance.",
+    "sections": [
+      {
+        "heading": "Project start-up",
+        "items": [
+          "Arrange and chair handover of project from estimating department to construction team.",
+          "Liaise with RD in staffing of project.",
+          "Validate project and develop business plan, cost control system, cashflow and billable schedules.",
+          "Produce procurement plan, drawing/design plan, construction programme, S-curve and histogram.",
+          "Liaise with client and design team on procurement and engineering issues.",
+          "Develop project safety and quality plans.",
+          "Mobilise subcontractors and labour in accordance with business plan.",
+          "Mobilise site establishment."
+        ]
+      },
+      {
+        "heading": "Project running phase",
+        "items": [
+          "Agree a training plan for staff and operatives with the RD.",
+          "Manage site team and day-to-day site activities.",
+          "Ensure compliance with programme, materials deliveries, engineering, quality and safety requirements.",
+          "Attend meetings with clients.",
+          "Hold weekly progress meetings with subcontractors, including safety and training.",
+          "Ensure effective cost and sales control with the Quantity Surveyor.",
+          "Advise client in good time of current sales plan.",
+          "Measure productivity weekly and maintain project progress control.",
+          "Submit monthly internal reports to the RD."
+        ]
+      },
+      {
+        "heading": "Project completion",
+        "items": [
+          "Ensure testing and commissioning follow the Quality Plan.",
+          "Ensure final design audit (if applicable) is carried out by the EM.",
+          "Complete and certify all life systems in time for handover.",
+          "Demonstrate all systems to the client and District Surveyor.",
+          "Handover O&M manual and record drawings.",
+          "Prepare final account with QS, submit and agree with client.",
+          "Demobilise site team in conjunction with RD.",
+          "Produce project close-out report for RD.",
+          "Archive project.",
+          "Maintain client contact through warranty period and retention collection."
+        ]
+      },
+      {
+        "heading": "Other duties",
+        "items": [
+          "Maintain site/daybook.",
+          "Attend monthly project managers’ meetings.",
+          "Develop skills in line with an agreed training plan.",
+          "Suggest continuous improvements.",
+          "Maintain contact with client base and excellent working relationships from start-up through completion.",
+          "Keep information secure and comply with the Information Security Management System (ISMS)."
+        ]
+      },
+      {
+        "heading": "Qualifications and experience",
+        "items": [
+          "3+ years’ experience in a project management role in the M&E industry.",
+          "Ability to monitor and control budgets.",
+          "Excellent Microsoft Word and Excel skills.",
+          "Good knowledge of building methods and regulations.",
+          "Proven track record managing projects across the full project lifecycle."
+        ]
+      },
+      {
+        "heading": "Desirable skills",
+        "items": [
+          "Attention to detail and accuracy.",
+          "Excellent communication and problem-solving.",
+          "Decision-making ability and commercial awareness."
+        ]
+      },
+      {
+        "heading": "Benefits",
+        "items": [
+          "Additional leave.",
+          "Food allowance."
+        ]
+      }
+    ],
+    "workLocation": "On the road",
+    "intro": "Tir Chonaill Careers is an Irish recruitment agency specialising in electrical contracting and engineering. We connect contractors with technical talent for commercial, industrial and infrastructure projects.",
+    "published": true
+  }
+]
