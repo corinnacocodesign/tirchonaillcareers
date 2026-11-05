@@ -1,0 +1,321 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recruitment Dashboard | Tir Chonaill Careers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dashboard-wrap{max-width:1100px;margin:0 auto;padding:40px 20px 80px}
+    .dashboard-card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:24px;margin-bottom:20px}
+    .dashboard-card h2{margin-top:0}
+    .dashboard-input{display:block;width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:6px;font:inherit}
+    .dashboard-button{padding:11px 18px;border:0;border-radius:6px;background:#164c3a;color:white;cursor:pointer;font:inherit}
+    .dashboard-button:disabled{opacity:.6;cursor:wait}
+    .dashboard-table-wrap{overflow-x:auto}
+    .dashboard-table{width:100%;border-collapse:collapse;text-align:left}
+    .dashboard-table th,.dashboard-table td{padding:14px 10px;border-bottom:1px solid #e5e5e5;vertical-align:top}
+    .dashboard-table th{font-size:.85rem;color:#555}
+    .dashboard-table td{font-size:.95rem}
+    .dashboard-table button{white-space:nowrap}
+    .dashboard-message{padding:12px;border-radius:6px;background:#f3f5f4;margin:12px 0}
+    .dashboard-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .dashboard-count{font-size:1.1rem;font-weight:600}
+    .dashboard-muted{color:#666;font-size:.9rem}
+    @media(max-width:600px){.dashboard-wrap{padding:25px 15px}.dashboard-card{padding:16px}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="Tir Chonaill Careers">
+      <div><strong>TIR CHONAILL</strong><small>CAREERS</small></div>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+    </nav>
+  </div>
+</header>
+
+<main class="dashboard-wrap">
+  <h1>Recruitment Dashboard</h1>
+  <p>Private access for authorised Tir Chonaill Careers recruiters.</p>
+
+  <section id="loginSection" class="dashboard-card" hidden>
+    <h2>Recruiter sign in</h2>
+    <form id="loginForm">
+      <label for="email">Email address</label>
+      <input id="email" class="dashboard-input" type="email"
+             autocomplete="username" required>
+
+      <label for="password">Password</label>
+      <input id="password" class="dashboard-input" type="password"
+             autocomplete="current-password" required>
+
+      <button id="loginButton" class="dashboard-button" type="submit">
+        Sign in
+      </button>
+    </form>
+    <p class="dashboard-muted">
+      Use the email address and password associated with your recruiter account.
+    </p>
+  </section>
+
+  <section id="dashboardSection" hidden>
+    <div class="dashboard-card">
+      <div class="dashboard-top">
+        <div>
+          <h2>Candidate applications</h2>
+          <div id="applicationCount" class="dashboard-count"></div>
+          <div id="signedInAs" class="dashboard-muted"></div>
+        </div>
+        <button id="signOutButton" class="dashboard-button" type="button">
+          Sign out
+        </button>
+      </div>
+
+      <label for="searchInput">Search applications</label>
+      <input id="searchInput" class="dashboard-input"
+             type="search" placeholder="Search by name, email or job title">
+
+      <div class="dashboard-table-wrap">
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Received</th>
+              <th>Candidate</th>
+              <th>Job</th>
+              <th>Contact</th>
+              <th>CV</th>
+            </tr>
+          </thead>
+          <tbody id="applicationsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div id="statusMessage" class="dashboard-message"
+       role="status" aria-live="polite" hidden></div>
+</main>
+
+<script type="module">
+  import { createClient } from
+    "https://esm.sh/@supabase/supabase-js@2";
+
+  const supabase = createClient(
+    "https://wqybomkrofcctkpgrqdf.supabase.co",
+    "sb_publishable_SKJ0iSUfbHTuyHkgIEgRMw_gqRWVfPA"
+  );
+
+  const authorisedEmails = new Set([
+    "shaun@tir-chonaill-careers.com",
+    "donal@tir-chonaill-careers.com"
+  ]);
+
+  const loginSection = document.getElementById("loginSection");
+  const dashboardSection = document.getElementById("dashboardSection");
+  const loginForm = document.getElementById("loginForm");
+  const loginButton = document.getElementById("loginButton");
+  const statusMessage = document.getElementById("statusMessage");
+  const searchInput = document.getElementById("searchInput");
+  const applicationsBody = document.getElementById("applicationsBody");
+
+  let applications = [];
+
+  function showStatus(message) {
+    statusMessage.textContent = message;
+    statusMessage.hidden = !message;
+  }
+
+  function showLogin() {
+    applications = [];
+    applicationsBody.replaceChildren();
+    dashboardSection.hidden = true;
+    loginSection.hidden = false;
+  }
+
+  function makeCell(text) {
+    const td = document.createElement("td");
+    td.textContent = text ?? "";
+    return td;
+  }
+
+  function renderApplications() {
+    const query = searchInput.value.trim().toLowerCase();
+
+    const filtered = applications.filter((item) =>
+      [item.full_name, item.email, item.job_title, item.phone]
+        .some((value) => String(value ?? "").toLowerCase().includes(query))
+    );
+
+    applicationsBody.replaceChildren();
+    document.getElementById("applicationCount").textContent =
+      `${filtered.length} application${filtered.length === 1 ? "" : "s"}`;
+
+    if (!filtered.length) {
+      const tr = document.createElement("tr");
+      const td = makeCell(
+        applications.length ? "No matching applications." : "No applications yet."
+      );
+      td.colSpan = 5;
+      tr.appendChild(td);
+      applicationsBody.appendChild(tr);
+      return;
+    }
+
+    for (const item of filtered) {
+      const tr = document.createElement("tr");
+
+      const date = item.created_at
+        ? new Date(item.created_at).toLocaleDateString("en-GB")
+        : "";
+
+      tr.appendChild(makeCell(date));
+
+      const candidateCell = document.createElement("td");
+      const name = document.createElement("strong");
+      name.textContent = item.full_name || "Unnamed candidate";
+      candidateCell.appendChild(name);
+
+      if (item.message) {
+        const message = document.createElement("p");
+        message.className = "dashboard-muted";
+        message.textContent = item.message;
+        candidateCell.appendChild(message);
+      }
+
+      tr.appendChild(candidateCell);
+      tr.appendChild(makeCell(item.job_title || "General application"));
+
+      const contactCell = document.createElement("td");
+      const emailLink = document.createElement("a");
+      emailLink.href = `mailto:${item.email || ""}`;
+      emailLink.textContent = item.email || "";
+      contactCell.appendChild(emailLink);
+
+      if (item.phone) {
+        const phone = document.createElement("div");
+        phone.textContent = item.phone;
+        contactCell.appendChild(phone);
+      }
+
+      tr.appendChild(contactCell);
+
+      const cvCell = document.createElement("td");
+      const downloadButton = document.createElement("button");
+      downloadButton.type = "button";
+      downloadButton.className = "dashboard-button";
+      downloadButton.textContent = "Download CV";
+
+      downloadButton.addEventListener("click", async () => {
+        downloadButton.disabled = true;
+        downloadButton.textContent = "Preparing...";
+
+        try {
+          const { data, error } = await supabase.storage
+            .from("candidate-cvs")
+            .createSignedUrl(item.cv_path, 60);
+
+          if (error || !data?.signedUrl) {
+            throw error || new Error("Could not create download link");
+          }
+
+          const link = document.createElement("a");
+          link.href = data.signedUrl;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.click();
+        } catch (error) {
+          showStatus("CV download failed: " + error.message);
+        } finally {
+          downloadButton.disabled = false;
+          downloadButton.textContent = "Download CV";
+        }
+      });
+
+      cvCell.appendChild(downloadButton);
+      tr.appendChild(cvCell);
+      applicationsBody.appendChild(tr);
+    }
+  }
+
+  async function loadApplications() {
+    showStatus("Loading applications...");
+
+    const { data, error } = await supabase
+      .from("job_applications")
+      .select("id,created_at,full_name,email,phone,job_title,message,cv_path")
+      .order("created_at", { ascending: false })
+      .limit(500);
+
+    if (error) {
+      showStatus("Could not load applications: " + error.message);
+      return;
+    }
+
+    applications = data || [];
+    renderApplications();
+    showStatus("");
+  }
+
+  async function checkSession() {
+    const { data: { user }, error } = await supabase.auth.getUser();
+
+    if (error || !user ||
+        !authorisedEmails.has((user.email || "").toLowerCase())) {
+      showLogin();
+      return;
+    }
+
+    loginSection.hidden = true;
+    dashboardSection.hidden = false;
+    document.getElementById("signedInAs").textContent =
+      `Signed in as ${user.email}`;
+
+    await loadApplications();
+  }
+
+  loginForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    loginButton.disabled = true;
+    showStatus("Signing in...");
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email, password
+    });
+
+    loginButton.disabled = false;
+
+    if (error) {
+      showStatus("Sign in failed: " + error.message);
+      return;
+    }
+
+    loginForm.reset();
+    showStatus("");
+    await checkSession();
+  });
+
+  document.getElementById("signOutButton")
+    .addEventListener("click", async () => {
+      await supabase.auth.signOut();
+      showStatus("");
+      showLogin();
+    });
+
+  searchInput.addEventListener("input", renderApplications);
+
+  await checkSession();
+</script>
+
+</body>
+</html>
