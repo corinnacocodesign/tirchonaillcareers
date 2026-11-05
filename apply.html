@@ -1,1 +1,184 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Upload Your CV | Tir Chonaill Careers</title><link rel="stylesheet" href="css/style.css"></head><body><header class="header"><div class="container nav"><a class="brand" href="index.html"><img src="images/logo.jpg"><div><strong>TIR CHONAILL</strong><small>CAREERS</small></div></a><nav class="navlinks"><a href="index.html">Home</a><a href="jobs.html">Jobs</a></nav></div></header><section class="page-hero"><div class="container"><span class="eyebrow">Candidates</span><h1>Upload your CV.</h1><p>Send us your details and we'll be in touch when the right opportunity comes up.</p></div></section><main class="section"><div class="container split"><form class="form" onsubmit="event.preventDefault();document.getElementById('demo').hidden=false"><div class="form-row"><input class="input" required placeholder="First name"><input class="input" required placeholder="Last name"></div><input class="input" type="email" required placeholder="Email address"><input class="input" type="tel" placeholder="Phone number"><input id="jobField" class="input" placeholder="Job you're interested in (optional)"><input class="input" type="file" accept=".pdf,.doc,.docx" required><textarea placeholder="A short message (optional)"></textarea><label><input type="checkbox" required> I agree to my details being used to contact me about recruitment opportunities.</label><button class="btn btn-green" type="submit">Preview application (not sent)</button><div id="demo" class="notice" hidden>CV uploads are not yet connected. Please do not submit personal information here until the secure application service is enabled.</div></form><div class="panel"><h2>Prefer to browse first?</h2><p>Take a look through our current vacancies and apply directly to a role.</p><a class="btn btn-gold" href="jobs.html">View current jobs</a></div></div></main><script>const p=new URLSearchParams(location.search).get('job');if(p)document.getElementById('jobField').value=p;</script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Upload Your CV | Tir Chonaill Careers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="Tir Chonaill Careers">
+      <div>
+        <strong>TIR CHONAILL</strong>
+        <small>CAREERS</small>
+      </div>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Candidates</span>
+    <h1>Upload your CV.</h1>
+    <p>Send us your details and we'll be in touch when the right opportunity comes up.</p>
+  </div>
+</section>
+
+<main class="section">
+  <div class="container split">
+
+    <form class="form" id="applicationForm">
+
+      <div class="form-row">
+        <input class="input" name="first_name" required
+               maxlength="100" placeholder="First name"
+               autocomplete="given-name">
+
+        <input class="input" name="last_name" required
+               maxlength="100" placeholder="Last name"
+               autocomplete="family-name">
+      </div>
+
+      <input class="input" type="email" name="email" required
+             maxlength="254" placeholder="Email address"
+             autocomplete="email">
+
+      <input class="input" type="tel" name="phone"
+             maxlength="50" placeholder="Phone number"
+             autocomplete="tel">
+
+      <input class="input" id="jobField" name="job_title"
+             maxlength="200"
+             placeholder="Job you're interested in (optional)">
+
+      <label for="cvFile"><strong>Upload your CV (PDF, DOC or DOCX, maximum 5 MB)</strong></label>
+      <input class="input" id="cvFile" name="cv" type="file"
+             accept=".pdf,.doc,.docx" required>
+
+      <textarea name="message" maxlength="3000"
+                placeholder="A short message (optional)"></textarea>
+
+      <!-- Spam-trap field: hidden from ordinary visitors -->
+      <div style="position:absolute;left:-9999px"
+           aria-hidden="true">
+        <label for="websiteField">Website</label>
+        <input id="websiteField" name="website" type="text"
+               tabindex="-1" autocomplete="off">
+      </div>
+
+      <label>
+        <input type="checkbox" name="consent" value="yes" required>
+        I agree to my details being used to contact me about
+        recruitment opportunities.
+      </label>
+
+      <button class="btn btn-green" id="submitButton" type="submit">
+        Submit application
+      </button>
+
+      <div id="formStatus" class="notice" role="status"
+           aria-live="polite" hidden></div>
+
+    </form>
+
+    <div class="panel">
+      <h2>Prefer to browse first?</h2>
+      <p>Take a look through our current vacancies and apply directly to a role.</p>
+      <a class="btn btn-gold" href="jobs.html">View current jobs</a>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  const FUNCTION_URL =
+    "https://wqybomkrofcctkpgrqdf.supabase.co/functions/v1/submit-application";
+
+  const form = document.getElementById("applicationForm");
+  const button = document.getElementById("submitButton");
+  const status = document.getElementById("formStatus");
+  const cvInput = document.getElementById("cvFile");
+
+  const job = new URLSearchParams(window.location.search).get("job");
+  if (job) {
+    document.getElementById("jobField").value = job.slice(0, 200);
+  }
+
+  function showStatus(message) {
+    status.textContent = message;
+    status.hidden = false;
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    const cv = cvInput.files[0];
+    const maxSize = 5 * 1024 * 1024;
+    const validExtensions = /\.(pdf|doc|docx)$/i;
+
+    if (!cv || cv.size === 0 || cv.size > maxSize) {
+      showStatus("Please select a CV smaller than 5 MB.");
+      return;
+    }
+
+    if (!validExtensions.test(cv.name)) {
+      showStatus("Please upload a PDF, DOC or DOCX file.");
+      return;
+    }
+
+    const data = new FormData(form);
+
+    button.disabled = true;
+    button.textContent = "Submitting application...";
+    showStatus("Uploading your CV securely. Please wait...");
+
+    try {
+      const response = await fetch(FUNCTION_URL, {
+        method: "POST",
+        body: data
+      });
+
+      let result = {};
+      try {
+        result = await response.json();
+      } catch (_) {
+        // Handle non-JSON server errors below.
+      }
+
+      if (!response.ok || result.success !== true) {
+        throw new Error(
+          result.error || "Your application could not be submitted. Please try again."
+        );
+      }
+
+      showStatus(
+        "Thank you! Your application and CV have been submitted successfully."
+      );
+
+      form.reset();
+
+    } catch (error) {
+      showStatus(
+        error.message ||
+        "Something went wrong. Please try again later."
+      );
+    } finally {
+      button.disabled = false;
+      button.textContent = "Submit application";
+    }
+  });
+</script>
+
+</body>
+</html>
