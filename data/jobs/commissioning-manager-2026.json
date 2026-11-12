@@ -1,0 +1,39 @@
+{
+  "id": "commissioning-manager-2026",
+  "title": "Commissioning Manager",
+  "published": true,
+  "location": "Northern Ireland",
+  "type": "Not specified",
+  "sector": "Engineering & Technical",
+  "salary": "Not specified",
+  "summary": "Lead commissioning of mission-critical infrastructure projects from planning and testing through validation.",
+  "intro": "",
+  "description": "Lead commissioning of mission-critical infrastructure projects from planning and testing through validation.",
+  "workLocation": "Northern Ireland",
+  "sections": [
+    {
+      "heading": "Main Duties and Responsibilities",
+      "items": [
+        "Conduct system testing and performance verification for reliability and compliance.",
+        "Maintain commissioning records, test scripts and change logs; manage specialist equipment.",
+        "Plan and oversee factory and on-site tests, procedures, schedules and subcontractors.",
+        "Lead commissioning engineers and provide weekly progress and risk reports."
+      ]
+    },
+    {
+      "heading": "Qualifications and Experience",
+      "items": [
+        "5+ years in a senior commissioning role.",
+        "Experience with PLCs and identifying software bugs during commissioning.",
+        "Knowledge of Google Workspace applications.",
+        "Unrestricted right to work in UK and EU without sponsorship."
+      ]
+    },
+    {
+      "heading": "Key Competencies & Desirable Attributes",
+      "items": [
+        "Leadership, independent prioritisation and problem-solving."
+      ]
+    }
+  ]
+}
