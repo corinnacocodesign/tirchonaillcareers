@@ -1,4 +1,3 @@
-
 name: Update job listings
 
 on:
@@ -13,14 +12,20 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-job-listings
+  cancel-in-progress: false
+
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get website files
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-        with:\n          fetch-depth: 0\n\n      - name: Rebuild job listings
+      - name: Rebuild job listings
         run: python3 scripts/build_jobs.py
 
       - name: Save updated listings
@@ -30,5 +35,13 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/jobs-index.json
             git commit -m "Update published job listings"
-            for attempt in 1 2 3 4 5; do\n              git pull --rebase origin root\n              if git push origin HEAD:root; then\n                exit 0\n              fi\n              sleep 3\n            done\n            echo 'Unable to push updated job listings after retries' >&2\n            exit 1
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin root
+              if git push origin HEAD:root; then
+                exit 0
+              fi
+              sleep 3
+            done
+            echo 'Unable to push updated job listings after retries' >&2
+            exit 1
           fi
