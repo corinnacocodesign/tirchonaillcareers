@@ -1,5 +1,241 @@
 [
   {
+    "id": "campus-lead-two-positions-2026",
+    "title": "Campus Lead (x2 Positions)",
+    "published": true,
+    "location": "Netherlands & Central Europe",
+    "type": "Not specified",
+    "sector": "Construction & Trades",
+    "salary": "Not specified",
+    "summary": "Two site-based Campus Leads are required: one in the Netherlands and one in Central Europe, each overseeing a major infrastructure campus.",
+    "intro": "",
+    "description": "Two site-based Campus Leads are required: one in the Netherlands and one in Central Europe, each overseeing a major infrastructure campus.",
+    "workLocation": "Netherlands & Central Europe",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Take senior on-site responsibility for campus delivery, programme and operations.",
+          "Direct Project Managers, Package Managers and multidisciplinary site teams.",
+          "Control campus-wide schedules, budgets, resources and milestones.",
+          "Maintain client relationships and rigorous health, safety and quality standards."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Extensive site leadership on large multi-package construction, MEP or data centre projects.",
+          "Experience coordinating multiple Project Managers and trade packages.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Package & Benefits",
+        "items": [
+          "Travel and accommodation covered, plus a tax-free monthly subsistence allowance as stated in the supplied role document."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commissioning-manager-2026",
+    "title": "Commissioning Manager",
+    "published": true,
+    "location": "Northern Ireland",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Lead commissioning of mission-critical infrastructure projects from planning and testing through validation.",
+    "intro": "",
+    "description": "Lead commissioning of mission-critical infrastructure projects from planning and testing through validation.",
+    "workLocation": "Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Conduct system testing and performance verification for reliability and compliance.",
+          "Maintain commissioning records, test scripts and change logs; manage specialist equipment.",
+          "Plan and oversee factory and on-site tests, procedures, schedules and subcontractors.",
+          "Lead commissioning engineers and provide weekly progress and risk reports."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "5+ years in a senior commissioning role.",
+          "Experience with PLCs and identifying software bugs during commissioning.",
+          "Knowledge of Google Workspace applications.",
+          "Unrestricted right to work in UK and EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Leadership, independent prioritisation and problem-solving."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "electrical-construction-manager-belgium-2026",
+    "title": "Electrical Construction Manager",
+    "published": true,
+    "location": "Belgium",
+    "type": "Not specified",
+    "sector": "Construction & Trades",
+    "salary": "Not specified",
+    "summary": "Oversee electrically biased construction operations across large-scale projects, coordinating teams and subcontractors for safe, timely, high-quality delivery.",
+    "intro": "",
+    "description": "Oversee electrically biased construction operations across large-scale projects, coordinating teams and subcontractors for safe, timely, high-quality delivery.",
+    "workLocation": "Belgium",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Direct daily operations, subcontractors, suppliers and site records across projects.",
+          "Manage programmes, trade sequencing, logistics and resource planning.",
+          "Inspect works for design compliance and quality.",
+          "Enforce EHS standards, review and implement RAMS, resolve site issues and delays.",
+          "Liaise with project managers, engineers and commercial teams and report performance."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "5+ years as a Construction Manager in construction or M&E, ideally MEP/data centre, industrial or commercial projects.",
+          "Relevant HNC/HND, degree or equivalent qualification; SMSTS certification essential.",
+          "Knowledge of health and safety regulations, including CDM.",
+          "Strong subcontractor leadership, organisation and communication.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Safety leadership, First Aid readiness, time management and collaborative problem-solving."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "electrical-engineer-2026",
+    "title": "Electrical Engineer",
+    "published": true,
+    "location": "Northern Ireland",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Support electrical and control system design, coordination and delivery on large data centre and industrial projects.",
+    "intro": "",
+    "description": "Support electrical and control system design, coordination and delivery on large data centre and industrial projects.",
+    "workLocation": "Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Coordinate electrical infrastructure design and documentation including LV/HV switchgear, lighting, BMS/PMS and safety systems.",
+          "Support mechanical integration and junior team development.",
+          "Manage client and contractor interfaces, RFQs, variations and long-lead equipment procurement.",
+          "Inspect installations against BS standards and local legislation; support testing, commissioning and handover."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Electrical engineering, building services or related degree/HND; chartered status desirable.",
+          "Electrical engineering experience and knowledge of BS 7671; data centre, industrial or infrastructure background advantageous.",
+          "Microsoft Office, Amtech/Dialux, AutoCAD/Revit and PLC/control system skills.",
+          "Right to work in Europe; site experience and full clean driving licence preferred."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Technical precision, problem-solving and multidisciplinary teamwork."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mechanical-engineer-2026",
+    "title": "Mechanical Engineer",
+    "published": true,
+    "location": "Northern Ireland",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Support design, installation and commissioning of mechanical systems on complex engineering and data centre projects.",
+    "intro": "",
+    "description": "Support design, installation and commissioning of mechanical systems on complex engineering and data centre projects.",
+    "workLocation": "Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Assist with system design, drawing reviews and technical documentation.",
+          "Support installation, inspection, testing and commissioning against project milestones.",
+          "Identify technical defects and improve engineering processes.",
+          "Coordinate project teams, subcontractors and clients and maintain records.",
+          "Follow environmental, health and safety regulations."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Degree, HND or equivalent in mechanical engineering or related discipline.",
+          "Mechanical design/installation experience; construction, engineering or data centre background advantageous.",
+          "Ability to read technical drawings and specifications and use IT/reporting tools.",
+          "Proof of eligibility to work in Europe; clean driving licence desirable."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Detail-oriented, collaborative and proactive technical problem-solving."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mechanical-engineer-manager-2026",
+    "title": "Mechanical Engineer Manager",
+    "published": true,
+    "location": "Northern Ireland",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Lead the mechanical engineering function, overseeing design, project delivery, engineering standards and team development.",
+    "intro": "",
+    "description": "Lead the mechanical engineering function, overseeing design, project delivery, engineering standards and team development.",
+    "workLocation": "Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Lead, mentor and manage mechanical engineers, performance, workloads and resources.",
+          "Review and approve mechanical designs, calculations and technical specifications against client requirements and industry codes.",
+          "Resolve technical issues during design, installation and commissioning and drive improvements.",
+          "Coordinate project managers, electrical engineers, site teams, clients and contractors.",
+          "Provide technical input, cost estimates and risk assessments for tenders and bids."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Relevant mechanical engineering degree or qualification and leadership experience in construction, MEP or infrastructure.",
+          "In-depth knowledge of mechanical systems, codes, compliance and full-lifecycle delivery.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Mentoring, analytical and commercial judgement, communication and safety focus."
+        ]
+      }
+    ]
+  },
+  {
     "id": "planner",
     "title": "Planner",
     "published": true,
@@ -57,6 +293,130 @@
         "items": [
           "Additional leave.",
           "Food allowance."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "program-regional-director-2026",
+    "title": "Program / Regional Director",
+    "published": true,
+    "location": "Europe (Frequent travel required)",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Oversee a portfolio of European construction projects, visiting sites regularly and leading client and site-management relationships.",
+    "intro": "",
+    "description": "Oversee a portfolio of European construction projects, visiting sites regularly and leading client and site-management relationships.",
+    "workLocation": "Europe (Frequent travel required)",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Provide senior oversight across European sites, meeting schedule, budget and quality targets.",
+          "Travel frequently to project locations as senior client and stakeholder contact.",
+          "Guide and mentor site management teams and resolve delivery bottlenecks.",
+          "Ensure health, safety, environmental and commercial governance."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Experience as Regional Director, Program Director or Senior Operations Manager in construction, MEP or data centres.",
+          "Strong commercial and stakeholder management and flexibility to travel.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Package & Benefits",
+        "items": [
+          "All work-related travel and accommodation expenses covered, with company expense card."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "project-manager-belgium-ni-2026",
+    "title": "Project Manager",
+    "published": true,
+    "location": "Belgium / Northern Ireland",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Direct electrical (LV, MV and HV) and mechanical piping/HVAC construction projects, from initial concept through final handover.",
+    "intro": "",
+    "description": "Direct electrical (LV, MV and HV) and mechanical piping/HVAC construction projects, from initial concept through final handover.",
+    "workLocation": "Belgium / Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Chair project handovers, coordinate staffing and establish business plans, cost frameworks, cashflow and billing schedules.",
+          "Develop procurement and design schedules, construction programmes, S-curves and histograms.",
+          "Mobilise labour, subcontractors and site facilities; develop safety and quality plans.",
+          "Oversee daily site operations, EHS compliance, training and subcontractor reviews.",
+          "Coordinate cost and sales tracking with the Quantity Surveyor; monitor productivity and report progress.",
+          "Manage testing, commissioning, audits, life-safety certification, O&M manuals and record drawings.",
+          "Finalise accounts, demobilise sites, archive documentation, submit close-out reports and support warranty periods.",
+          "Maintain site logs, information security and continuous improvement."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "At least three years managing M&E projects across the construction lifecycle.",
+          "Knowledge of construction methods, building regulations and budget control.",
+          "Strong Microsoft Office skills.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Attention to detail, commercial awareness, leadership, problem-solving and communication."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "project-manager-belgium-ni-deployment-2026",
+    "title": "Project Manager",
+    "published": true,
+    "location": "Belgium / Northern Ireland (Country-based deployment)",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Manage electrical (LV, MV and HV) and mechanical piping/HVAC construction projects from concept to completion, acting as the primary client contact.",
+    "intro": "",
+    "description": "Manage electrical (LV, MV and HV) and mechanical piping/HVAC construction projects from concept to completion, acting as the primary client contact.",
+    "workLocation": "Belgium / Northern Ireland (Country-based deployment)",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Lead estimating-to-construction handover and coordinate staffing with the Regional Director.",
+          "Validate scope; develop business plans, cost controls, cashflow projections and billing schedules.",
+          "Prepare procurement, design and construction programmes, S-curves and histograms; mobilise site, labour and subcontractors.",
+          "Manage daily site operations, safety, quality, subcontractor training and weekly progress meetings.",
+          "Work with the Quantity Surveyor on costs and sales; monitor productivity, client meetings and monthly reporting.",
+          "Oversee testing, commissioning, final audits, life-system certification, O&M manuals and record drawings.",
+          "Agree final accounts, demobilise, archive records, submit close-out report and maintain warranty-period contact.",
+          "Keep daily site logs, attend management meetings and uphold information security."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "3+ years in a Project Manager role in the M&E industry.",
+          "Track record across multiple projects and full project lifecycle.",
+          "Knowledge of building methods, regulations, budget monitoring and control.",
+          "Excellent Microsoft Office skills; unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Accuracy, commercial awareness, problem-solving, leadership and communication."
         ]
       }
     ]
@@ -153,5 +513,162 @@
     "workLocation": "On the road",
     "intro": "Tir Chonaill Careers is an Irish recruitment agency specialising in electrical contracting and engineering. We connect contractors with technical talent for commercial, industrial and infrastructure projects.",
     "published": true
+  },
+  {
+    "id": "project-manager-security-installation-belgium-2026",
+    "title": "Project Manager – Security Installation",
+    "published": true,
+    "location": "Belgium",
+    "type": "Not specified",
+    "sector": "Construction & Trades",
+    "salary": "Not specified",
+    "summary": "Lead a major on-site security installation project in Belgium, coordinating Project Managers and Package Managers.",
+    "intro": "",
+    "description": "Lead a major on-site security installation project in Belgium, coordinating Project Managers and Package Managers.",
+    "workLocation": "Belgium",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Plan and manage security installation from mobilisation to handover.",
+          "Lead project and package teams across technical workstreams.",
+          "Enforce technical specifications, security protocols and health and safety standards.",
+          "Act as main on-site client contact, reporting schedules, risks and milestones."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Experience delivering complex security, electrical or technical infrastructure installations.",
+          "Strong multidisciplinary team and subcontractor leadership.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Package & Benefits",
+        "items": [
+          "Travel and accommodation covered, plus a tax-free monthly subsistence allowance as stated in the supplied role document."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "recruitment-specialist-2026",
+    "title": "Recruitment Specialist",
+    "published": true,
+    "location": "Northern Ireland",
+    "type": "Not specified",
+    "sector": "Professional Services",
+    "salary": "Not specified",
+    "summary": "Drive recruitment, talent acquisition and retention for a growing engineering group alongside HR and marketing.",
+    "intro": "",
+    "description": "Drive recruitment, talent acquisition and retention for a growing engineering group alongside HR and marketing.",
+    "workLocation": "Northern Ireland",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Manage end-to-end recruitment across departments and European locations, sourcing on LinkedIn and directly, coordinating interviews and candidate care.",
+          "Support employer branding, job-board and LinkedIn content, employee stories and recruitment campaigns.",
+          "Partner with HR on onboarding, exit feedback, internal mobility and retention.",
+          "Coordinate graduate, apprenticeship and placement schemes and education partnerships.",
+          "Track recruitment metrics and maintain compliant recruitment records."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Minimum two years' recruitment or talent coordination experience.",
+          "Proven end-to-end recruitment delivery and digital sourcing.",
+          "Strong writing, organisation and interpersonal skills.",
+          "Unrestricted right to work in EU without sponsorship."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Early-careers, engineering/technical and international recruitment experience desirable."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "regional-director-2026",
+    "title": "Regional Director",
+    "published": true,
+    "location": "Europe / Northern Ireland (Regional travel required)",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Experienced Regional Director to lead engineering operations, project delivery, site teams, subcontractors and client relationships.",
+    "intro": "",
+    "description": "Experienced Regional Director to lead engineering operations, project delivery, site teams, subcontractors and client relationships.",
+    "workLocation": "Europe / Northern Ireland (Regional travel required)",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Deliver annual turnover and margin targets; oversee tenders, resource planning, risk assessments and Project Sponsor assignments.",
+          "Manage projects from inception to handover, controlling budgets, schedules, quality and safety.",
+          "Lead project and site managers, resolve escalations, monitor KPIs and ensure environmental, safety and quality compliance.",
+          "Coordinate workforce and subcontractors, manage commercial risks and maintain long-term client relationships."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "Degree or professional qualification in engineering or construction management preferred.",
+          "Experience as a Regional Director, Operations Director or Senior Project Manager in M&E, construction or infrastructure.",
+          "Extensive large-scale mechanical and electrical project delivery, cost control and team management experience.",
+          "Strong stakeholder management; legal right to work in relevant EU country without sponsorship; valid driving licence."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "Leadership, financial accountability, client focus, safety, communication and resilience."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "senior-mep-project-contracts-manager-2026",
+    "title": "Senior MEP Project Manager / Contracts Manager",
+    "published": true,
+    "location": "Netherlands",
+    "type": "Not specified",
+    "sector": "Engineering & Technical",
+    "salary": "Not specified",
+    "summary": "Lead multiple simultaneous MEP construction projects in the Netherlands, taking commercial, financial and operational ownership.",
+    "intro": "",
+    "description": "Lead multiple simultaneous MEP construction projects in the Netherlands, taking commercial, financial and operational ownership.",
+    "workLocation": "Netherlands",
+    "sections": [
+      {
+        "heading": "Main Duties and Responsibilities",
+        "items": [
+          "Take end-to-end ownership of multiple projects and their commercial, financial and operational performance.",
+          "Lead multidisciplinary engineering, commercial and site teams.",
+          "Coordinate clients, subcontractors, consultants and stakeholders to deliver milestones.",
+          "Maintain safety, quality and regulatory compliance while tracking budgets, KPIs and schedules."
+        ]
+      },
+      {
+        "heading": "Qualifications and Experience",
+        "items": [
+          "5+ years in M&E or construction.",
+          "Relevant engineering or technical qualification, preferably mechanical or electrical.",
+          "Proven concurrent management of international sites and teams.",
+          "Leadership, communication, organisation and cost management skills.",
+          "Unrestricted right to work in relevant EU country without sponsorship; valid driving licence."
+        ]
+      },
+      {
+        "heading": "Key Competencies & Desirable Attributes",
+        "items": [
+          "MEP/data centre background, contract frameworks, risk management, MS Project and document control experience desirable."
+        ]
+      }
+    ]
   }
 ]
