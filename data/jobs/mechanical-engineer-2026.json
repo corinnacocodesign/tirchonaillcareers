@@ -1,0 +1,40 @@
+{
+  "id": "mechanical-engineer-2026",
+  "title": "Mechanical Engineer",
+  "published": true,
+  "location": "Northern Ireland",
+  "type": "Not specified",
+  "sector": "Engineering & Technical",
+  "salary": "Not specified",
+  "summary": "Support design, installation and commissioning of mechanical systems on complex engineering and data centre projects.",
+  "intro": "",
+  "description": "Support design, installation and commissioning of mechanical systems on complex engineering and data centre projects.",
+  "workLocation": "Northern Ireland",
+  "sections": [
+    {
+      "heading": "Main Duties and Responsibilities",
+      "items": [
+        "Assist with system design, drawing reviews and technical documentation.",
+        "Support installation, inspection, testing and commissioning against project milestones.",
+        "Identify technical defects and improve engineering processes.",
+        "Coordinate project teams, subcontractors and clients and maintain records.",
+        "Follow environmental, health and safety regulations."
+      ]
+    },
+    {
+      "heading": "Qualifications and Experience",
+      "items": [
+        "Degree, HND or equivalent in mechanical engineering or related discipline.",
+        "Mechanical design/installation experience; construction, engineering or data centre background advantageous.",
+        "Ability to read technical drawings and specifications and use IT/reporting tools.",
+        "Proof of eligibility to work in Europe; clean driving licence desirable."
+      ]
+    },
+    {
+      "heading": "Key Competencies & Desirable Attributes",
+      "items": [
+        "Detail-oriented, collaborative and proactive technical problem-solving."
+      ]
+    }
+  ]
+}
