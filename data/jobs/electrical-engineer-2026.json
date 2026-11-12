@@ -1,0 +1,39 @@
+{
+  "id": "electrical-engineer-2026",
+  "title": "Electrical Engineer",
+  "published": true,
+  "location": "Northern Ireland",
+  "type": "Not specified",
+  "sector": "Engineering & Technical",
+  "salary": "Not specified",
+  "summary": "Support electrical and control system design, coordination and delivery on large data centre and industrial projects.",
+  "intro": "",
+  "description": "Support electrical and control system design, coordination and delivery on large data centre and industrial projects.",
+  "workLocation": "Northern Ireland",
+  "sections": [
+    {
+      "heading": "Main Duties and Responsibilities",
+      "items": [
+        "Coordinate electrical infrastructure design and documentation including LV/HV switchgear, lighting, BMS/PMS and safety systems.",
+        "Support mechanical integration and junior team development.",
+        "Manage client and contractor interfaces, RFQs, variations and long-lead equipment procurement.",
+        "Inspect installations against BS standards and local legislation; support testing, commissioning and handover."
+      ]
+    },
+    {
+      "heading": "Qualifications and Experience",
+      "items": [
+        "Electrical engineering, building services or related degree/HND; chartered status desirable.",
+        "Electrical engineering experience and knowledge of BS 7671; data centre, industrial or infrastructure background advantageous.",
+        "Microsoft Office, Amtech/Dialux, AutoCAD/Revit and PLC/control system skills.",
+        "Right to work in Europe; site experience and full clean driving licence preferred."
+      ]
+    },
+    {
+      "heading": "Key Competencies & Desirable Attributes",
+      "items": [
+        "Technical precision, problem-solving and multidisciplinary teamwork."
+      ]
+    }
+  ]
+}
